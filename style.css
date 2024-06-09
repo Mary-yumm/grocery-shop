@@ -1,0 +1,139 @@
+:root{
+    --mainColor:hsl(197, 25%, 49%);
+    --darkmain:hsl(197, 88%, 14%);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:hsl(0, 0%, 95%);
+    background-image: url('bg5.jpg');
+    background-size:cover;
+}
+
+.bar{
+    margin-top: 10px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content:end;
+    color:antiquewhite;
+}
+
+.menu{
+    border: 2px inset var(--mainColor);
+    border-radius: 15px;
+    padding: 5px 10px; 
+    color:antiquewhite;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 50px;
+}
+.menu>a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+.menu>a:hover{
+    font-weight: bold;
+}
+
+.title{
+    position: absolute;
+    z-index: 1;
+    top:120px;
+    left:50px;
+    color:antiquewhite;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    width: 25%;
+    border: 5px inset var(--mainColor);
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 5px;
+    transform: translate(200%,40%);
+    justify-content: center;
+    display:grid;
+    color:antiquewhite;
+    text-align: center;
+}
+
+.signup-container{
+    position:absolute;
+    backdrop-filter: blur(5px);
+    width: 25%;
+    border: 5px inset var(--mainColor);
+    border-radius: 20px;
+    padding: 10px;
+    border-width: 5px;
+    transform: translate(200%,10%);
+    justify-content: center;
+    display:grid;
+    color:antiquewhite;
+    text-align: center;
+}
+.input-group{
+    height:30px;
+    width:300px;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    border: 2px inset var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"]{
+    border:none;
+    background-color: transparent;
+    width:250px;
+    color:antiquewhite;
+    
+}
+input[type="text"]::placeholder{
+    color:antiquewhite;
+}
+input[type="password"]{
+    border:none;
+    background-color: transparent;
+    width:250px;
+    color:antiquewhite;
+}
+input[type="password"]::placeholder{
+    color:antiquewhite;
+}
+.material-icons {
+    font-size: 24px;
+    color:antiquewhite;
+    text-align: center;
+    vertical-align: middle;
+}
+button[type="submit"]{
+    width:100%;
+    height:30px;
+    background-color:var(--darkmain);
+    color:antiquewhite;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    border: 2px inset var(--mainColor);
+}
+button[type="submit"]:hover{
+    background-color: var(--mainColor);
+    color:var(--darkmain);
+    font-weight: bold;
+}
+
+.register-button{
+    margin-bottom: 0;
+}
+.register-button > a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+.register-button > a:hover{
+    color: antiquewhite;
+    font-weight: bold;
+}
